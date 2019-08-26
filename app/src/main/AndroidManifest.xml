@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tetsuya.ttstopwatch">
+    <!-- <uses-sdk android:minSdkVersion="16"
+        android:targetSdkVersion="27" /> -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!-- android:launchMode="singleTop" -->
+
+        <!--<activity android:name=".MainActivity" android:parentActivityName=".MainActivity">-->
+        <!--"orientation|screenSize"を追加することで、回転時画面初期化されない-->
+        <activity android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"><!--「設定」-->
+        </activity>
+
+        <activity
+            android:name=".NewActivity"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+    </application>
+
+</manifest>
