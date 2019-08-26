@@ -1,0 +1,4 @@
+# "."で始まる
+.git
+.gradle
+.idea
