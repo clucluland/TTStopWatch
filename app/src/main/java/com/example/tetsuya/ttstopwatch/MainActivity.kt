@@ -154,6 +154,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     // アクティビティ作成時
+    @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         // 画面レイアウトactivity_main.xmlより、オブジェクトの参照
